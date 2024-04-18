@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  
+  
+
+    .navp1>h4{
+        font-size: 3.5vw;
+        font-weight: 200;
+        /* padding-right: 7px; */
+    }
+    #btn{
+        height: 6vw;
+        width: 10vw;
+        font-size: 1.8vw;
+        /* background-color: rgb(15, 41, 63); */
+        /* color: black; */
+    }
+    .logo{
+        padding-left: 1.9vw;
+        height: 60%;
+    }
+    .navp2{
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .blurred1{
+        max-height: 80%;
+
+    }
+    .restored1{
+        max-height: 80%;
+    }
+    .page1{
+        flex-direction: column;
+
+    }
+    .content{
+        justify-content: flex-start;
+    }
+    .pagepart1{
+        max-height: 70vh;
+        min-width: 100%;
+        flex-direction: column;
+        /* background-color: aqua; */
+    }
+    .pagepart2{
+        max-height: 30vh;
+        min-width: 100%;
+        /* display: none; */
+        /* opacity: 0; */
+
+    }
+    .pagepart2>h1{
+        opacity: 0;
+    }
+    .restp{
+        color: aliceblue;
+        font-size: 7vw;
+        width: 100%;
+        text-transform: uppercase;
+        padding-left: 4vw;
+    }
+}
+
+.main{
+    overflow: hidden;
+}
+
+nav>img{
+    height: 70%;
+    width: 10%;
+    object-fit: contain;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+nav{
+    height: 9vh;
+    width: -webkit-fill-available ;
+    position: fixed;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.navp1{
+    display: flex;
+    gap: 1.5vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+
+}
+
+.navp2{
+ 
+   /* background-color: black; */
+   padding-right: 3vw;
+   /* box-sizing: content-box; */
+   /* background-color: aqua; */
+    
+}
+.navp2>button{
+    height: 2vw;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8vw;
+   text-align: center;
+   background-color: rgb(34, 59, 59);
+   border: none;
+   color: antiquewhite;
+   border-radius: 10%;
+   box-sizing: border-box;
+
+}
+
+.h1>h1{
+    font-size: 10vw ;
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    line-height: 5vw;
+    
+}
+.hero{
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    text-align: center;
+    background-color: bisque;
+    line-height: 7vw;
+    flex-direction: column;
+    /* position: relative; */
+
+}
+
+.hero>h1{
+    /* background-color: aliceblue; */
+    position: relative;
+    margin-top: -7.2vw;
+
+}
+.we{
+    /* background-color: blue; */
+
+    margin-top: 10vw;
+}
+.ur{
+    opacity: 1;
+}
+.hero>:nth-last-child(1)::after{
+    content: "..";
+    position: absolute;
+    height: 1vw;
+    width: 50%;
+    background-color: rgb(34, 59, 59);
+    bottom: -25%;
+    left: 35%;
+    transform: translate(25%,-25%);
+    text-align: end;
+    
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    gap: 6vw;
+}
+.pagepart1{
+    display: flex;
+    height: 100vh;
+
+    /* background-color: aliceblue; */
+    width: 60%;
+    align-items: center;
+    justify-self: center;
+
+}
+.content{
+    /* background-color: aqua; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 4vw;
+
+}
+
+.blurred1{
+    height: 100%;
+    border-radius: 10%;
+    position: absolute;
+    z-index: 2;
+}
+
+.restored1{
+    height: 100%;
+    border-radius: 10%;
+    /* position: absolute; */
+    transition: all ease 1.5s;
+}
+.rest:hover .restored1{
+    transform: translate(85%);
+
+}
+
+.rest{
+    background-color: black;
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: white;
+    cursor: pointer;
+    /* flex-direction: column; */
+}
+.rest>h3{
+    font-size: 1vw;
+    text-transform: capitalize;
+
+}
+.arrow{
+   height: 3vh;
+
+}
+
+.pagepart2{
+    background-color: rgba(255, 228, 196, 0.945);
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
