@@ -1,3 +1,72 @@
+var arrow = document.querySelector(".arro")
+var restored1 = document.getElementById("#fir")
+var arr = document.querySelector(".arr")
+
+
+
+
+arrow.addEventListener("click",function(){
+
+
+
+
+    var tl = gsap.timeline()
+    tl.to("#fir"  ,{
+   
+        x:90,
+        duration:0.3,
+        ease:"power1"
+        
+
+    } ,"a")
+    tl.to(arrow  ,{
+   
+        x:-700,
+       ease:"bounce.out",
+        // opacity:"0"
+        display:"none"
+
+    } ,"a")
+    
+    tl.to(".arr",{
+        x:-50,
+        ease:"power1",
+        opacity:"1"
+    })
+  
+
+})
+
+arr.addEventListener("click", function(events){
+   
+   
+
+    
+    gsap.to("#fir",{
+        x:0,
+    })
+    gsap.to(".arr",{
+        x:50,
+        ease:"bounce.out",
+        opacity:"0"
+    })
+    gsap.to(arrow  ,{
+   
+        x:0,
+       ease:"power1",
+    //    opacity:"1"
+    display:"block",
+    duration:"2"
+
+
+    } )
+    
+})
+
+
+
+
+
 gsap.from(".we",{
    x:"200",
    duration:2,
@@ -28,13 +97,15 @@ gsap.from(".ph",{
 //   });
 //replaces yourElement's text with "This is the new text" over the course of 2 seconds
 gsap.to(".restp", {
-    scrolltrigger:{
+    duration: 3,
+    text: "Restore Your Memories BY the help of ai",
+    delimiter:"g",
+    ease: "bounce.out",
+
+    scrollTrigger:{
         trigger:".restp",
-        markers:true,
+        // markers:true,
     },
     
-    duration: 4,
-    text: "Restore Your Memories BY the help of ai",
-    delimiter:"",
-    ease: "none",
+  
   });

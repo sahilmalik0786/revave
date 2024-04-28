@@ -33,14 +33,23 @@
     }
     .blurred1{
         max-height: 80%;
-
+        /* display: none; */
+    }
+    .blurred2{
+        max-height: 80%;
     }
     .restored1{
+        max-height: 80%;
+    }
+    .restored2{
         max-height: 80%;
     }
     .page1{
         flex-direction: column;
 
+    }
+    .page2{
+        flex-direction: column;
     }
     .content{
         justify-content: flex-start;
@@ -64,14 +73,54 @@
     .restp{
         color: aliceblue;
         font-size: 7vw;
-        width: 100%;
+        /* width: 100%; */
+        /* background-color: white; */
+        /* margin-top: 40px; */
         text-transform: uppercase;
         padding-left: 4vw;
+    }
+    .wraprestp{
+        margin-top: 40px;
+        height: 50vh;
+        /* background-color: aqua; */
+        width: 100%;
+    }
+    .rest:hover #fir{
+        transform: translate(0%);
+    }
+    .overlay{
+        display: none;
     }
 }
 
 .main{
     overflow: hidden;
+    
+}
+
+.btnn{
+    /* background-color: aliceblue; */
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 23vh;
+    display: flex;
+
+}
+.btnn>img{
+    object-fit: cover;
+    height: 100%;
+    /* width: 100%; */
+   
+
+}
+.arr{
+    transform: rotate(180deg);
+    position: relative;
+    right: -500%;
+    opacity: 0;
 }
 
 nav>img{
@@ -201,7 +250,7 @@ nav{
     justify-content: flex-start;
     position: relative;
     padding-left: 4vw;
-
+    /* background-color: aliceblue; */
 }
 
 .blurred1{
@@ -232,6 +281,7 @@ nav{
     gap: 2vw;
     color: white;
     cursor: pointer;
+    margin-bottom: 5vw;
     /* flex-direction: column; */
 }
 .rest>h3{
@@ -241,7 +291,7 @@ nav{
 }
 .arrow{
    height: 3vh;
-
+   /* position: absolute; */
 }
 
 .pagepart2{
@@ -253,4 +303,64 @@ nav{
     justify-content: center;
     text-transform: uppercase;
     font-size: 3vw;
+}
+
+
+.page2{
+    height: 100vh;
+    background-color: rgb(250, 214, 170);
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: row-reverse; */
+
+}
+
+.page2p1{
+    background-color: black;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.images{
+    height: 50vh;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    padding-right: 4vw;
+}
+.imag{
+    width: 30%;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+
+}
+.blurred2{
+    position: relative;
+    z-index: 3;
+    border-radius: 10%;
+    height: 100%;
+    /* width: 68%; */
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.restored2{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10%;
+    /* width: 50%; */
+    right: 0%;
+    transition: all ease 0.5s;
+}
+
+.arrow2{
+    height: 3vh;
+    rotate: 180deg;
 }
